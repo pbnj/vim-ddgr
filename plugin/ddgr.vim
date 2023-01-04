@@ -7,7 +7,7 @@ function! DDGRBangCompletion(A,L,P) abort
         \ 'godoc', 'gopkg',
         \ 'google', 'g', 'gdocs',
         \ 'man',
-        \ 'node', 'npm', 'typescript', 'mdn'
+        \ 'node', 'npm', 'typescript', 'mdn',
         \ 'owasp',
         \ 'reddit',
         \ 'rust', 'rustdoc', 'rce', 'rclippy', 'crates', 'docs.rs',
