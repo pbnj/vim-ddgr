@@ -10,11 +10,11 @@ function! DDGRBangCompletion(A,L,P) abort
         \ 'node', 'npm', 'typescript', 'mdn'
         \ 'owasp',
         \ 'reddit',
-        \ 'rust', 'rustdoc', 'rce', 'rclippy', 'crates', 'docs.rs'
+        \ 'rust', 'rustdoc', 'rce', 'rclippy', 'crates', 'docs.rs',
         \ 'stackoverflow',
         \ 'tmg',
         \ 'vimw',
-        \ 'yt'
+        \ 'yt',
         \ ], 'v:val =~ a:A')
 endfunction
 
