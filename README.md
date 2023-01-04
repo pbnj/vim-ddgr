@@ -68,3 +68,30 @@ This is equivalent to running the following shell command:
 ```sh
 ddgr --noprompt --gui-browser \!<bang> <query>
 ```
+
+### More Integrations with Vim
+
+Vim uses `keywordprg` to query external programs when <kbd>K</kbd> (<kbd>shift</kbd> +
+<kbd>k</kbd>) is pressed on a word in Vim. On many systems, the default
+`keywordprg` is `man`.
+
+You may alternatively set `keywordprg` to `:DDGR` globally, by adding `set
+keywordprg=:DDGR` to your vimrc, to query DuckDuckGo when <kbd>K</kbd> is
+pressed on a word.
+
+You may further customize `keywordprg` for specific filetypes, like:
+
+```vim
+augroup ddgr
+  autocmd!
+  autocmd BufEnter,WinEnter *.py let &keywordprg = ':DDGR! python'
+  autocmd BufEnter,WinEnter *.go let &keywordprg = ':DDGR! devdocs go'
+augroup END
+```
+
+This means:
+
+- When <kbd>K</kbd> is pressed on a word in a Python buffer, Vim will run
+  `:DDGR! python <word>`
+- When <kbd>K</kbd> is pressed on a word in a Go buffer, Vim will run
+  `:DDGR! devdocs go <word>`
