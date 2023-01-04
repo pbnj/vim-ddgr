@@ -14,7 +14,7 @@ function! DDGRBangCompletion(A,L,P) abort
         \ 'stackoverflow',
         \ 'tmg',
         \ 'vimw',
-        \ 'yt',
+        \ 'yt'
         \ ], 'v:val =~ a:A')
 endfunction
 
