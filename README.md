@@ -59,6 +59,10 @@ Tab completion is supported for Bangs:
 :DDGR! <tab> <query>
 ```
 
+Completions come from
+[`DDGRBangCompletion`](https://github.com/pbnj/vim-ddgr/blob/380e93715145b40a3d5976816bcbface14aeef66/plugin/ddgr.vim)
+function.
+
 This is equivalent to running the following shell command:
 
 ```sh
