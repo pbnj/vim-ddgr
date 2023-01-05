@@ -30,8 +30,8 @@ This is equivalent to running the following shell command:
 ddgr --expand --num 5 <query>
 ```
 
-The results are in Vim's integrated terminal, where all `ddgr` omniprompt keys
-work as expected:
+The results are displayed in Vim's integrated terminal, where all `ddgr`
+omniprompt keys work as expected:
 
 - `n`, `p`, `f` to fetch the next, prev or first set of search results
 - `<index>` to open the result corresponding to index in `$BROWSER`
