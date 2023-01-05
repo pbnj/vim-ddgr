@@ -8,9 +8,11 @@
 
 ## Install
 
-```vim
-Plug 'https://github.com/pbnj/vim-ddgr'
-```
+- With [vim-plug](https://github.com/junegunn/vim-plug):
+
+  ```vim
+  Plug 'https://github.com/pbnj/vim-ddgr'
+  ```
 
 ## Usage
 
