@@ -99,3 +99,7 @@ This means:
   `:DDGR! python <word>`
 - When <kbd>K</kbd> is pressed on a word in a Go buffer, Vim will run
   `:DDGR! devdocs go <word>`
+
+## Demo
+
+<video src="https://user-images.githubusercontent.com/6811830/210681253-48894ed2-47d4-4a52-8435-56092edfd204.mp4" />
