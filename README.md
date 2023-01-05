@@ -88,8 +88,8 @@ You may further customize `keywordprg` for specific filetypes, like:
 ```vim
 augroup ddgr
   autocmd!
-  autocmd FileType *.py setlocal keywordprg=:DDGR!\ python
-  autocmd FileType *.go setlocal keywordprg=:DDGR!\ devdocs\ go
+  autocmd FileType python setlocal keywordprg=:DDGR!\ python
+  autocmd FileType go setlocal keywordprg=:DDGR!\ devdocs\ go
 augroup END
 ```
 
