@@ -1,3 +1,12 @@
+" ddgr.vim - A minimal integration plugin for DuckDuckGo `ddgr` CLI.
+" Maintainer: Peter Benjamin
+" Version: 0.0.1
+
+if exists('g:loaded_ddgr')
+  finish
+endif
+let g:loaded_ddgr = 1
+
 function! DDGRBangCompletion(A,L,P) abort
   return filter(
         \ [ 'bangs'
@@ -27,3 +36,5 @@ endfunction
 "   :DDGR! g <query>
 command! -nargs=* -bang -complete=customlist,DDGRBangCompletion DDGR
       \ execute '<mods> terminal ++close ddgr ' . (expand('<bang>') == '!' ? '--gb --np <bang>' : '--expand --num 5 ') . '<args>'
+
+" vim:ft=vim:sw=2:sts=2:ts=2:et:
