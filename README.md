@@ -100,6 +100,17 @@ This means:
 - When <kbd>K</kbd> is pressed on a word in a Go buffer, Vim will run
   `:DDGR! devdocs go <word>`
 
+**Note:** This plugin is not required for `keywordprg` integration. You can
+just as easily call `:terminal ddgr`, like:
+
+```vim
+augroup ddgr
+  autocmd!
+  autocmd FileType python setlocal keywordprg=:terminal\ ++close\ ddgr\ --noprompt\ --gui-browser\ !python
+  autocmd FileType go setlocal keywordprg=:terminal\ ++close\ ddgr\ --noprompt\ --gui-browser\ !devdocs\ go
+augroup END
+```
+
 ## Demo
 
 <video src="https://user-images.githubusercontent.com/6811830/210681253-48894ed2-47d4-4a52-8435-56092edfd204.mp4" />
