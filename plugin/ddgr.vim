@@ -33,6 +33,6 @@ function! DDGRBangCompletion(A,L,P) abort
 endfunction
 
 command! -nargs=* -bang -complete=customlist,DDGRBangCompletion DDGR
-      \ execute '! ddgr ' .. (has('gui_running') ? '--nocolor ' : '') .. (expand('<bang>') == '!' ? '--gb --np \<bang>' : '--expand ') .. '<args>'
+      \ execute 'terminal ++close ddgr ' .. (has('gui_running') ? '--nocolor ' : '') .. (expand('<bang>') == '!' ? '--gb --np \<bang>' : '--expand ') .. '<args>'
 
 " vim:sw=2:sts=2:ts=2:et:
